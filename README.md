@@ -101,19 +101,20 @@ import sys
 input = sys.stdin.readline
 a,b = map(int,input().split())
 ```
-```
-파이썬에서 여러 조건으로 정렬하는 방법(key에 튜플로 여러 인자를 주면 해당 안자의 순서대로 정렬)
-list = sorted(list, key = lambda x:(x[1], x[0]))
 
-```
 
 - **파이썬은 do/while문이 없음**
 
-- **리스트관련 함수**
+- **리스트 관련**
 
 
     - list.reverse() 리스트 거꾸로
 
     - list.count() 내가 찾고자 하는 값이 리스트에 몇개나 들어있는지 확인하고자 할 때
+    
+```
+파이썬에서 여러 조건으로 정렬하는 방법(key에 튜플로 여러 인자를 주면 해당 안자의 순서대로 정렬)
+list = sorted(list, key = lambda x:(x[1], x[0]))
 
+```
 
