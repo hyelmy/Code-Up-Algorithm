@@ -10,8 +10,8 @@ for i in range(n):
 
 
 #L, U, R, D
-dx = [-1,0,1,0]
-dy = [0,1,0,-1]
+dx = [0,-1,0,1]
+dy = [1,0,-1,0]
 
 #바이러스가 사방으로 퍼지도록하는 함수
 def spread_virus(x,y):
