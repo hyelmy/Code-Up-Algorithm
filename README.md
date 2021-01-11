@@ -96,12 +96,16 @@ for i in range(num):
     time.append([fir,sec])
 ```
 ```
-파이썬은 함수형 언어이다.
+#파이썬은 함수형 언어이다.
 import sys
 input = sys.stdin.readline
 a,b = map(int,input().split())
 ```
+```
+#for문 돌려가면서 안받아도 되는 방법
+map_list = [list(map(int, list(input()))) for _ in range(N)]
 
+```
 
 - **파이썬은 do/while문이 없음**
 
@@ -112,9 +116,29 @@ a,b = map(int,input().split())
 
     - list.count() 내가 찾고자 하는 값이 리스트에 몇개나 들어있는지 확인하고자 할 때
     
+    - 리스트 슬라이싱
+         - 양수: 연속적인 객체들의 제일 앞에서부터 0을 시작으로 번호를 매깁니다.
+
+         - 음수: 연속적인 객체들의 제일 뒤에서부터 -1을 시작으로 번호를 매깁니다.
+
+         - **list[a:b] -> a~b-1 범위
+
+    - 정렬 방법
+         - 파이썬에서 여러 조건으로 정렬하는 방법(key에 튜플로 여러 인자를 주면 해당 안자의 순서대로 정렬)
+```
+meeting_list = sorted(meeting_list, key = lambda x:(x[1], x[0]))
+```
+         - 
+
+```c = sorted(a, key = lambda x : x[0])```
+   
 ```
 파이썬에서 여러 조건으로 정렬하는 방법(key에 튜플로 여러 인자를 주면 해당 안자의 순서대로 정렬)
 list = sorted(list, key = lambda x:(x[1], x[0]))
 
 ```
+
+- **1,0 반전 방법
+    - A[i][j] = 1 - A[i][j] (1에서 빼주면 된다!(값이 0 or 1일 경우에만)) 
+
 
