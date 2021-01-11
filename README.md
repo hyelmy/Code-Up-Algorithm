@@ -128,17 +128,15 @@ map_list = [list(map(int, list(input()))) for _ in range(N)]
 ```
 meeting_list = sorted(meeting_list, key = lambda x:(x[1], x[0]))
 ```
-         - 
 
 ```c = sorted(a, key = lambda x : x[0])```
    
 ```
 파이썬에서 여러 조건으로 정렬하는 방법(key에 튜플로 여러 인자를 주면 해당 안자의 순서대로 정렬)
 list = sorted(list, key = lambda x:(x[1], x[0]))
-
 ```
 
-- **1,0 반전 방법
+- **1,0 반전 방법**
     - A[i][j] = 1 - A[i][j] (1에서 빼주면 된다!(값이 0 or 1일 경우에만)) 
 
 
